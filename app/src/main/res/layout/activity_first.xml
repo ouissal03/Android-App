@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:gravity="center"
+    android:padding="40dp"
+    tools:context=".FirstActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#1A2873"
+                android:checked="true"
+                android:text="K Nearest Neighbors"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#1A2873"
+                android:text="Naive Bayes"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGrp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1A2873"
+            android:text="Next"
+            android:textColor="#F2F2F2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

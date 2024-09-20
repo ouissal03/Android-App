@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:gravity="center"
+    android:padding="40dp"
+    tools:context=".FormActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTxtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTxtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtAge"
+            android:layout_marginTop="20dp"
+            android:hint="Gender"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTxtBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtGender"
+            android:layout_marginTop="20dp"
+            android:hint="Blood Pressure"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTxtCh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtBP"
+            android:layout_marginTop="20dp"
+            android:hint="Cholesterol"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTxtNa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtCh"
+            android:layout_marginTop="20dp"
+            android:hint="Na"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTxtK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtNa"
+            android:layout_marginTop="20dp"
+            android:hint="K"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+
+        <Button
+            android:id="@+id/btnEvaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTxtK"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1A2873"
+            android:text="Evaluate"
+            android:textColor="#F2F2F2" />
+
+    </RelativeLayout>
+
+</LinearLayout>
